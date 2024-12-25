@@ -1,0 +1,13 @@
+cd /Users/g200603mac022/Downloads/django_practice
+python3 -m venv myenv
+
+source myenv/bin/activate
+source myenv/bin/desactivate
+
+pip3 install django
+python3 -m django --version
+
+cd /Users/g200603mac022/Downloads/django_practice/customer360
+python3 manage.py makemigrations customer360
+python3 manage.py migrate
+python3 manage.py runserver
